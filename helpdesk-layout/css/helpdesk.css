@@ -1,0 +1,59 @@
+﻿.ms-SearchBox-field {
+  background-color: transparent !important;
+}
+
+.support-ticket-page {
+  opacity: 0;
+  height: 0;
+  display: none;
+}
+
+.support-ticket-page.is-active-page {
+  opacity: 1;
+  height: 100%;
+  display: block;
+  transition: opacity display 0.5s linear;
+}
+
+.rq-Form-actions {
+  margin-top: 24px;
+  text-align: right;
+}
+
+.Frosting-helpdesk-requests,
+.Frosting-helpdesk-todo {
+  height: 350px;
+  overflow: hidden;
+}
+
+.Frosting-helpdesk-requests ul,
+.Frosting-helpdesk-todo ul {
+  height: 300px;
+  overflow-y: auto;
+}
+
+.Frosting-helpdesk-requests > .Frosting-helpdesk-requests--header,
+.Frosting-helpdesk-todo > .Frosting-helpdesk-todo--header {
+  padding: 8px;
+}
+
+.Frosting-helpdesk-requests .ms-ListItem,
+.Frosting-helpdesk-todo .ms-ListItem {
+  animation-name: slideup;
+  animation-duration: 1.3s;
+  animation-timing-function: cubic-bezier(.61,.11,.24,.97);
+}
+
+.Frosting-helpdesk-requests .ms-ListItem:hover,
+.Frosting-helpdesk-todo .ms-ListItem:hover {
+  cursor: pointer;
+}
+
+@keyframes slideup {
+  from {
+    margin-top: 350px;
+  }
+  to {
+    margin-top: 0px;
+  }
+}
